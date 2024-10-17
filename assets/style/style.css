@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: whitesmoke;
   font-family: "Poiret One", sans-serif;
@@ -16,7 +19,7 @@ body {
   background-color: white;
   border: 2px solid black;
   width: 800px;
-  height: 200px;
+  height: auto;
   overflow: hidden; /* предотвращаем выход изображения за границы контейнера */
   display: flex;
   flex-direction: row;
@@ -58,9 +61,8 @@ p {
   background: #383d48; 
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   border: none;
-  font-size: 1.25em;
-  margin-top: 32px;
-  margin-bottom: 80px;
+  margin-top: auto;
+  font-size: 1.125em;
 }
 .coupon-btn:before {
   content: "";
