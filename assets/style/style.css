@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   background-color: whitesmoke;
   font-family: "Poiret One", sans-serif;
@@ -11,22 +12,29 @@ body {
   display: flex;
   justify-content: center;
 }
-.main {
-}
-.title {
-}
+
+.main {}
+
+.title {}
+
 .container {
   background-color: white;
   border: 2px solid black;
   width: 800px;
   height: auto;
-  overflow: hidden; /* предотвращаем выход изображения за границы контейнера */
+  overflow: hidden;
+  /* предотвращаем выход изображения за границы контейнера */
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   box-shadow: 15px 4px 4px rgba(0, 0, 0, 0.08);
 }
+
+.border-style {
+  border-top-style: none;
+}
+
 .product-photo-img {
   max-width: 110px;
   width: 100%;
@@ -34,21 +42,26 @@ body {
   object-fit: cover;
   margin: 10px;
 }
+
 .product-info {
   margin: 10px;
   width: 100%;
 }
+
 .product-name-title {
   font-size: 1.2em;
 }
+
 p {
   margin: 5px;
 }
+
 .price {
   width: 20%;
   font-weight: bold;
   color: steelblue;
 }
+
 .coupon-btn {
   text-decoration: none;
   display: inline-block;
@@ -58,12 +71,13 @@ p {
   padding: 0 20px;
   color: white;
   font-size: 14px;
-  background: #383d48; 
+  background: #383d48;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   border: none;
   margin-top: auto;
   font-size: 1.125em;
 }
+
 .coupon-btn:before {
   content: "";
   position: absolute;
@@ -75,17 +89,21 @@ p {
   box-shadow: -1px 1px 1px rgba(0, 0, 0, .4);
   transition: .3s;
 }
+
 .coupon-btn:hover:before {
   width: 20px;
   height: 20px;
 }
+
 .inner {
   display: flex;
   justify-content: space-between;
 }
+
 .total {
   font-size: 1.5em;
 }
+
 .total-amount {
   display: flex;
   align-items: center;

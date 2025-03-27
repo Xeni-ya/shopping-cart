@@ -1,74 +1,93 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/style/style.css">
-  <title>Корзина покупок</title>
-</head>
-<body>
-  <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <title>Корзина покупок</title>
+  </head>
+  <body>
+    <header></header>
+    <main class="main">
+      <h1 class="title">Корзина</h1>
 
-  </header>
-  <main class="main">
-    <h1 class="title">Корзина</h1>
+      <div class="container">
+        <img
+          src="./assets/img/Короткая куртка женская SHU серая.webp"
+          alt="куртка"
+          class="product-photo-img"
+        />
 
-    <div class="container">
-      <img src="./assets/img/Короткая куртка женская SHU серая.webp" alt="куртка" class="product-photo-img">
-
-      <div class="product-info">
-        <h2 class="product-name-title">Короткая куртка женская SHU серая</h2>
-        <p>Цвет: Серый</p>
-        <p>Размер: S</p>
-        <p>Количество: 1</p>
+        <div class="product-info">
+          <h2 class="product-name-title">Короткая куртка женская SHU серая</h2>
+          <p>Цвет: Серый</p>
+          <p>Размер: S</p>
+          <p>Количество: 1</p>
+        </div>
+        <div class="price" id="price-jacket">20990 ₽</div>
       </div>
-      <div class="price" id="price-jacket">20990 ₽</div>
-    </div>
 
-    <div class="container">
-      <img src="./assets/img/Кроссовки.jpg" alt="кроссовки" class="product-photo-img">
-      <div class="product-info">
-        <h2 class="product-name-title">Кроссовки женские 88079-202F</h2>
-        <p>Цвет: Бежевый</p>
-        <p>Размер: 39</p>
-        <p>Количество: 1</p>
+      <div class="container border-style">
+        <img
+          src="./assets/img/Кроссовки.jpg"
+          alt="кроссовки"
+          class="product-photo-img"
+        />
+        <div class="product-info">
+          <h2 class="product-name-title">Кроссовки женские 88079-202F</h2>
+          <p>Цвет: Бежевый</p>
+          <p>Размер: 39</p>
+          <p>Количество: 1</p>
+        </div>
+        <div class="price" id="price-sneakers">6990 ₽</div>
       </div>
-      <div class="price" id="price-sneakers">6990 ₽</div>
-    </div>
 
-    <div class="container">
-      <img src="./assets/img/Джинсы Relaxed.jpg" alt="джинсы" class="product-photo-img">
-      <div class="product-info">
-        <h2 class="product-name-title">Джинсы Relaxed с высокой посадкой Love Republic</h2>
-        <p>Цвет: Голубой</p>
-        <p>Размер: L</p>
-        <p>Количество: 1</p>
+      <div class="container border-style">
+        <img
+          src="./assets/img/Джинсы Relaxed.jpg"
+          alt="джинсы"
+          class="product-photo-img"
+        />
+        <div class="product-info">
+          <h2 class="product-name-title">
+            Джинсы Relaxed с высокой посадкой Love Republic
+          </h2>
+          <p>Цвет: Голубой</p>
+          <p>Размер: L</p>
+          <p>Количество: 1</p>
+        </div>
+        <div class="price" id="price-jeans">2599 ₽</div>
       </div>
-      <div class="price" id="price-jeans">2599 ₽</div>
-    </div>
 
-    <div class="container">
-      <img src="./assets/img/Ремень, коричневый.jpg" alt="ремень" class="product-photo-img">
-      <div class="product-info">
-        <h2 class="product-name-title">Ремень женский (IFBr006)</h2>
-        <p>Цвет: Коричневый</p>
-        <p>Размер: 90см</p>
-        <p>Количество: 1</p>
+      <div class="container border-style">
+        <img
+          src="./assets/img/Ремень, коричневый.jpg"
+          alt="ремень"
+          class="product-photo-img"
+        />
+        <div class="product-info">
+          <h2 class="product-name-title">Ремень женский (IFBr006)</h2>
+          <p>Цвет: Коричневый</p>
+          <p>Размер: 90см</p>
+          <p>Количество: 1</p>
+        </div>
+        <div class="price" id="price-belt">7500 ₽</div>
       </div>
-      <div class="price" id="price-belt">7500 ₽</div>
-    </div>
 
-    <div class="inner">
-      <button class="coupon-btn" onclick="">Использовать купон на 20%</button>
-      <h3 class="total">Итого:</h3>
-      <p class="total-amount"></p>
-    </div>
-  </main>
-  <footer></footer>
+      <div class="inner">
+        <button class="coupon-btn" onclick="">Использовать купон на 20%</button>
+        <h3 class="total">Итого:</h3>
+        <p class="total-amount"></p>
+      </div>
+    </main>
+    <footer></footer>
 
-  <script src="./assets/script/script.js"></script>
-</body>
+    <script src="./assets/script/script.js"></script>
+  </body>
 </html>

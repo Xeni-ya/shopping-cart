@@ -7,7 +7,7 @@ const priceBelt = document.getElementById('price-belt').innerHTML;
 
 // 3. Привести значение переменных к числу (вспомним про унарный плюс)
 let priceJacketNum = +priceJacket.replace(' ₽', '');
-let priceSneakersNum  = +priceSneakers.replace(' ₽', '');
+let priceSneakersNum = +priceSneakers.replace(' ₽', '');
 let priceJeansNum = +priceJeans.replace(' ₽', '');
 let priceBeltNum = +priceBelt.replace(' ₽', '');
 
@@ -27,13 +27,13 @@ let applyDiscount = () => {
   }
 
   // Вычисляем новую стоимость после скидки
-  sum = sum * 0.8; 
+  sum = sum * (20 / 100);
 
   // Обновляем отображаемую стоимость
   totalAmount.textContent = `${sum} ₽`;
 
   // Отключаем кнопку, чтобы скидку нельзя было применить повторно
-  couponBtn.classList.add('disabled'); 
+  couponBtn.classList.add('disabled');
 };
 
 // 7. Добавить метод onclick или addEventListener на кнопку ”Использовать купон на 20%”
